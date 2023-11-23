@@ -9,11 +9,11 @@ import RelatedProduct from '../Components/RelatedProduct/RelatedProduct';
 const Product = () => {
     
       const {all_product}= useContext(ShopContext);
-      const {productId} = useParams ();
-      const product = all_product.find((e) => e.id === Number (productId));
+      const {productId} = useParams();
+      const product = all_product.find((e) => e.id === Number(productId));
 
 return (
-      <div>
+      <div className='ml-20'>
         <Breadcrum product={product } />
         <ProductDisplay product ={product} />
         <DescriptionBox />

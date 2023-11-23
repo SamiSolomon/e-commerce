@@ -16,25 +16,25 @@ const Navbar = () => {
       </div>
       <ul className='flex flex-row p-3 gap-6'>
         <li onClick={() => setMenu('shop')}>
-        <Link to='/'> Shop </Link> {menu === 'shop' ? <hr className='bg-black h-1' /> : <></>}{' '}
+        <Link to='/'> Shop </Link> {menu === 'shop' ? <hr className='bg-orange-600 h-1' /> : <></>}{' '}
         </li>
         <li onClick={() => setMenu('mens')}>
-         <Link to='/men'>  Men </Link> {menu === 'mens' ? <hr className='bg-black h-1' /> : <></>}{' '}
+         <Link to='/men'>  Men </Link> {menu === 'mens' ? <hr className='bg-orange-600 h-1' /> : <></>}{' '}
         </li>
         <li onClick={() => setMenu('womens')}>
-         <Link to='/women'> Women </Link>  {menu === 'womens' ? <hr className='bg-black h-1' /> : <></>}{' '}
+         <Link to='/women'> Women </Link>  {menu === 'womens' ? <hr className='bg-orange-600 h-1' /> : <></>}{' '}
         </li>
         <li onClick={() => setMenu('kids')}>
-         <Link to='/kids'> Kids</Link> {menu === 'kids' ? <hr className='bg-black h-1' /> : <></>}{' '}
+         <Link to='/kids'> Kids</Link> {menu === 'kids' ? <hr className='bg-orange-600 h-1' /> : <></>}{' '}
         </li>
       </ul>
       <div className='flex flex-row gap-4'>
        <Link to='/login'> <button className='bg-white border border-slate-900 p-2 rounded-2xl px-3'>Login</button> </Link> 
       <Link to='/cart'> <img src={cart_icon} alt='Cart-icon' /> </Link>
-      <div>{ getTotalCartItems() }</div>
+      <div className='bg-orange-600 rounded-full w-7 h-7 text-white text-center relative -left-7  -top-2'>{ getTotalCartItems() }</div>
       </div>
     </div>
-  );
+  )
 };
 
 export default Navbar;

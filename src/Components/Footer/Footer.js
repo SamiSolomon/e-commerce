@@ -7,13 +7,13 @@ import whatsapp_icon from '../../Assets/whatsapp_icon.png'
 
 function Footer() {
   return (
-    <div>
-          <div>
-            <img src={footer_logo} alt="footer" />
-            <p>SHOPPER</p>
+    <div className=' flex flex-col m-16 items-center gap-6 h-screen'>
+          <div className='flex flex-row'>
+            <img  src={footer_logo} alt="footer" />
+            <p className='font-bold text-4xl py-6 px-3'>SHOPPER</p>
           </div>
           <div>
-            <ul>
+            <ul className='flex flex-row gap-8'>
                 <li>Company</li>
                 <li>Products</li>
                 <li>Offices</li>
@@ -21,7 +21,7 @@ function Footer() {
                 <li>Contact</li>
             </ul>
           </div>
-        <div>
+        <div className='flex flex-row  gap-12'>
           <div>
                <img src={instagram_icon} alt='instagram' />
           </div>
@@ -33,8 +33,8 @@ function Footer() {
           </div>
         </div>
         <div>
-            <hr />
-            <p>Copyright @2023 - All right Reserved</p>
+            <hr  className='w-screen border border-gray-400' />
+            <p className='text-center text-gray-400'>Copyright @2023 - All right Reserved</p>
         </div>
         
     </div>
