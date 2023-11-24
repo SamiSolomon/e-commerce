@@ -5,7 +5,7 @@ import all_product from '../Assets/all_product'
 
   const getDefaultCart = ()=> {
     let cart = {};
-    for(let index= 0; index < all_product.length; index++){
+    for(let index= 0; index < all_product.length + 1; index++){
       cart[index] = 0;
 
     }
